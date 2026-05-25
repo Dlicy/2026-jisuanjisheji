@@ -1,0 +1,17 @@
+2026-04-20 11:31:26 [ERROR] Create client error for region cn-hangzhou: must pass "config.accessKeyId"
+AssertionError [ERR_ASSERTION]: must pass "config.accessKeyId"
+    at new RPCClient (C:\Users\Miracle\Desktop\2026软件杯\RJBBackend\node_modules\@alicloud\pop-core\lib\rpc.js:120:7)
+    at AiAgentService.createClient (C:\Users\Miracle\Desktop\2026软件杯\RJBBackend\src\services\aiAgent.service.js:36:28)
+    at AiAgentService.getClient (C:\Users\Miracle\Desktop\2026软件杯\RJBBackend\src\services\aiAgent.service.js:26:29)
+    at AiAgentService.generateAIAgentCall (C:\Users\Miracle\Desktop\2026软件杯\RJBBackend\src\services\aiAgent.service.js:235:29)
+    at ImsServiceImpl.generateAIAgentCall (C:\Users\Miracle\Desktop\2026软件杯\RJBBackend\src\services\interface\ims.service.impl.js:87:54)
+    at AIAgentControllerV2.generateAIAgentCall (C:\Users\Miracle\Desktop\2026软件杯\RJBBackend\src\controllers\aiAgent.controller.js:320:52)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2026-04-20T03:31:26.645Z [ERROR] generateAIAgentCall error: 创建阿里云客户端失败: must pass "config.accessKeyId"
+BizException: 创建阿里云客户端失败: must pass "config.accessKeyId"
+    at AiAgentService.createClient (C:\Users\Miracle\Desktop\2026软件杯\RJBBackend\src\services\aiAgent.service.js:46:19)
+    at AiAgentService.getClient (C:\Users\Miracle\Desktop\2026软件杯\RJBBackend\src\services\aiAgent.service.js:26:29)
+    at AiAgentService.generateAIAgentCall (C:\Users\Miracle\Desktop\2026软件杯\RJBBackend\src\services\aiAgent.service.js:235:29)
+    at ImsServiceImpl.generateAIAgentCall (C:\Users\Miracle\Desktop\2026软件杯\RJBBackend\src\services\interface\ims.service.impl.js:87:54)
+    at AIAgentControllerV2.generateAIAgentCall (C:\Users\Miracle\Desktop\2026软件杯\RJBBackend\src\controllers\aiAgent.controller.js:320:52)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
